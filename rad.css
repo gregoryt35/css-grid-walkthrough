@@ -37,5 +37,17 @@ html {
 
 /* Style your grid here */
 #grid {
-    
+    display: grid;
+
+    /* 6x2 */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    /* 2x6 */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    /* 3x4 second row is larger than the others */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
 }
